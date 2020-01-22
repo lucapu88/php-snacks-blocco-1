@@ -46,7 +46,11 @@ https://www.codepile.net/pile/R2K5d68z -->
   ];
 
   foreach ($posts as $data => $value) {
-    echo 'data: ' . $data . '<br>';
-
+    echo '<br>' . 'DATA: ' . $data . '<br>';
+    foreach ($value as $testo) {
+      echo $testo['title'] . '<br>';
+      echo $testo['author'] . '<br>';
+      echo $testo['text'] . '<br>' . '<br>';
+    }
   }
 ?>
